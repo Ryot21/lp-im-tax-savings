@@ -1,5 +1,25 @@
 // 共通
+.circleItem{
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid $site-color01;
+    background: $main-color--w;
+    overflow: hidden;
+    .imgBox{
+        width: 100% !important;
+        height: auto !important;
+        padding-top: 100% !important;
+        background: $main-color--w !important;
 
+    }
+    .circleItem__inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
 // 横幅
 .w1100{
     @include min(768){
