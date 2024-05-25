@@ -2820,7 +2820,6 @@ button.swiper-pagination-bullet {
 .afterBox.-body {
   position: relative;
   height: 350px;
-  opacity: 0;
 }
 .afterBox.-body p {
   position: absolute;
@@ -7537,7 +7536,6 @@ a {
   --------------------------------------- */
 }
 .a-graph01 {
-  opacity: 0;
   animation-name: graph-short;
   perspective-origin: left center;
   animation-fill-mode: forwards;
@@ -7545,14 +7543,9 @@ a {
 @keyframes graph-short {
   0% {
     height: 350px;
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
   }
   100% {
     height: 200px;
-    opacity: 1;
   }
 }
 .a-fade-blur img {
