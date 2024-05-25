@@ -47,7 +47,8 @@
     &-fade-blur,                   // fade+ぼかし
     &-bird_r,&-bird_l01,&-bird_l02,// 鳥
     &-purupuru,                    // プルプル
-    &-fviewOutImg,&-fviewInImg     // 縮小、拡大
+    &-fviewOutImg,&-fviewInImg,    // 縮小、拡大
+    &-graph01
     {
     /* ---------------------------------------
         各アニメーション_オプション関係
@@ -263,6 +264,14 @@
                 &::after,img{
                     animation-timeline: view();
                     animation-range: entry 25% contain 50%;
+                }
+            }
+            &.-sc5{
+                animation-timeline: view();
+                animation-range: entry 50% contain 100%;
+                &::after,img{
+                    animation-timeline: view();
+                    animation-range: entry 50% contain 100%;
                 }
             }
 

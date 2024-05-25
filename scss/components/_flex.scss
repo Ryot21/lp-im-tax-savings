@@ -14,6 +14,7 @@
     &.-h-c{align-items: center;}
     &.-h-c_s{@include max(768){align-items: center;}}
     &.-h-c_pc{@include min(768){align-items: center;}}
+    &.-h-b{align-items: end;}
 
     // 反転
     &.-r{ flex-direction: row-reverse !important;}

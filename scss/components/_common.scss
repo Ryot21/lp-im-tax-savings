@@ -20,6 +20,112 @@
         width: 100%;
     }
 }
+.borderBox{
+    border: 3px solid $site-color02;
+    @include min(768){
+        border: 2px solid $site-color02;
+    }
+}
+// 
+    // LP > 
+    .beforeAfterArea{
+        &.-bodyArea{
+            position: relative;
+            height: 350px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 43%;
+                left: 35%;
+                width: 30%;
+                height: 1px;
+                border: 2px dashed #004aad;
+
+                opacity: 0;
+                animation-name:fadeAnime;
+                perspective-origin: left center;
+                animation-fill-mode: forwards;
+                z-index: -1;
+            }
+            .t-67{
+                position: absolute;
+                top: 27%;
+                left: 38%;
+                width: auto;
+                background: $main-color--w;
+                @include min(768){
+                    left: 40%;
+                }
+                p{display: inline-block;}
+            }
+            .body-inner{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+        .-col2_2{
+            justify-content: space-between;
+            li{
+                margin: 0 !important;
+                &:nth-child(1){
+                    width: calc(35%) !important;
+                    @include min(768){
+                        width: calc(35%) !important;
+                    }
+                }
+                &:nth-child(2){
+                    width: calc(35%) !important;
+                    @include min(768){
+                        width: calc(35%) !important;
+                    }
+                }
+            }
+        }
+    }
+
+.beforeBox{
+    background: $main-color--gray;
+    border: 2px solid $main-color--Dgray;
+    z-index: 1;
+    &.-top{
+        border-radius: 10px;
+    }
+    &.-body{
+        position: relative;
+        height: 350px;
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
+.afterBox{
+    background: $site-color01;
+    border: 2px solid $site-color01;
+    z-index: 1;
+    &.-top{
+        border-radius: 10px;
+    }
+    &.-body{
+        position: relative;
+        height: 350px;
+        opacity: 0;
+        p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            width: auto;
+        }
+    }
+}
+
 // 横幅
 .w1100{
     @include min(768){

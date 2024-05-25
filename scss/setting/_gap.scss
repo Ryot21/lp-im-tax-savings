@@ -242,3 +242,7 @@
 .pdr5  {@include min(768){padding-right: 5% !important;}}
 
 .pd0 {padding:0!important;}
+.pd3 {padding: 3% }
+.pd5 {padding: 5% }
+
+.pd3s {@include max(768){padding: 3%;}}
