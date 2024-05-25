@@ -211,6 +211,56 @@
 				right: 0;
 				width: auto;
 			}
+			// お悩み
+			&.-flowTitle{
+				top: 10%;
+				left: 50%;
+				transform: translateX(-50%);
+				background: $site-color01;
+				width: max-content;
+				padding: 2%;
+				@include min(768){
+					top: 0;
+				}
+			}
+			&.-flowItem{
+        padding: 1% 3% 1%;
+				background: $site-color02;
+				border: 1px solid $site-color01;
+				border-radius: 10px;
+				&.-flowItem01{
+					top: 35%;
+					left: 45%;
+					@include min(768){
+						top: 35%;
+						left: 15%;
+					}
+				}
+				&.-flowItem02{
+					top: 45%;
+					left: 45%;
+					@include min(768){
+						top: 32%;
+						left: 63%;
+					}
+				}
+				&.-flowItem03{
+					top: 55%;
+					left: 45%;
+					@include min(768){
+						top: 59%;
+						left: 4%;
+					}
+				}
+				&.-flowItem04{
+					top: 65%;
+					left: 45%;
+					@include min(768){
+						top: 64%;
+						left: 67%;
+					}
+				}
+			}
 			// セクション01
 			&.-secItem01{
 				top: 50%;
